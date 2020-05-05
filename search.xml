@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>test</title>
+    <url>/2020/05/04/test/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/05/03/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
@@ -20,20 +25,11 @@
 ]]></content>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/2020/05/04/test/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Build a Free Blog with Hexo on Github - Setup</title>
     <url>/2020/05/05/Build-a-Free-Blog-with-Hexo-on-Github-Setup/</url>
-    <content><![CDATA[<p>review….</p>
-<a id="more"></a>
-
-<p>other content…</p>
-<p>Hexo is a fast, simple and powerful blog framework which is powered by Node.js. As Hexo support Markdown, it has been widely used to deploy a blog or other websites on Github Pages.</p>
+    <content><![CDATA[<p>Hexo is a fast, simple and powerful blog framework which is powered by Node.js. As Hexo support Markdown, it has been widely used to deploy a blog or other websites on Github Pages.</p>
 <p>In this series, I will give some instructions about how to build a personal blog with Hexo and Github according to my hands-on practice.</p>
-<!-- more -->
+<a id="more"></a>
 <h2 id="Get-Start"><a href="#Get-Start" class="headerlink" title="Get Start"></a>Get Start</h2><h2 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <div class="note info"><p>Make sure you have installed Node.js and Git before this step. </p></div>
 <h2 id="Initialize-Hexo"><a href="#Initialize-Hexo" class="headerlink" title="Initialize Hexo"></a>Initialize Hexo</h2><p>Create a folder for the blog and initialize Hexo in that directory.</p>
