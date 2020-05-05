@@ -62,7 +62,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Hexo,Github,Blog," />
 
 
 
@@ -73,17 +73,22 @@
 
 
 
-<meta name="description" content="review….">
+<meta name="description" content="Hexo is a fast, simple and powerful blog framework which is powered by Node.js. As Hexo support Markdown, it has been widely used to deploy a blog or other websites on Github Pages. In this series, I">
 <meta property="og:type" content="article">
-<meta property="og:title" content="where">
-<meta property="og:url" content="http://yoursite.com/2020/04/06/where/index.html">
+<meta property="og:title" content="Build a Free Blog with Hexo on Github - Setup">
+<meta property="og:url" content="http://yoursite.com/2020/05/06/Build-a-Free-Blog-with-Hexo-on-Github-Setup/index.html">
 <meta property="og:site_name" content="Yvonne Zhong">
-<meta property="og:description" content="review….">
+<meta property="og:description" content="Hexo is a fast, simple and powerful blog framework which is powered by Node.js. As Hexo support Markdown, it has been widely used to deploy a blog or other websites on Github Pages. In this series, I">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-05T22:17:02.000Z">
-<meta property="article:modified_time" content="2020-05-05T22:55:50.170Z">
+<meta property="og:image" content="https://live.staticflickr.com/65535/49857419726_c9236debe7_w_d.jpg">
+<meta property="article:published_time" content="2020-05-05T22:33:08.000Z">
+<meta property="article:modified_time" content="2020-05-05T22:58:37.047Z">
 <meta property="article:author" content="Yvonne Zhong">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Github">
+<meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://live.staticflickr.com/65535/49857419726_c9236debe7_w_d.jpg">
 
 
 
@@ -113,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/04/06/where/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/05/06/Build-a-Free-Blog-with-Hexo-on-Github-Setup/"/>
 
 
 
 
 
-  <title>where | Yvonne Zhong</title>
+  <title>Build a Free Blog with Hexo on Github - Setup | Yvonne Zhong</title>
   
 
 
@@ -290,7 +295,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/06/where/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/06/Build-a-Free-Blog-with-Hexo-on-Github-Setup/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yvonne Zhong">
@@ -307,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">where</h1>
+          <h1 class="post-title" itemprop="name headline">Build a Free Blog with Hexo on Github - Setup</h1>
         
 
         <div class="post-meta">
@@ -319,8 +324,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-06T10:17:02+12:00">
-                2020-04-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-06T10:33:08+12:00">
+                2020-05-06
               </time>
             
 
@@ -329,6 +334,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -357,10 +384,24 @@
       
 
       
-        <p>review….</p>
+        <p>Hexo is a fast, simple and powerful blog framework which is powered by Node.js. As Hexo support Markdown, it has been widely used to deploy a blog or other websites on Github Pages.</p>
+<p>In this series, I will give some instructions about how to build a personal blog with Hexo and Github according to my hands-on practice.</p>
 <a id="more"></a>
+<h2 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<div class="note info"><p>Make sure you have installed Node.js and Git before this step. </p></div>
+<h2 id="Initialize-Hexo"><a href="#Initialize-Hexo" class="headerlink" title="Initialize Hexo"></a>Initialize Hexo</h2><p>Create a folder for the blog and initialize Hexo in that directory.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+<p>The structure of the project folder will then look like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules       &#x2F;&#x2F; libraries downloaded from npm</span><br><span class="line">├── scaffolds          &#x2F;&#x2F; scaffold folder</span><br><span class="line">|   ├── draft.md         &#x2F;&#x2F; draft scaffold</span><br><span class="line">|   ├── page.md          &#x2F;&#x2F; page scaffold</span><br><span class="line">|   └── post.md          &#x2F;&#x2F; post scaffold</span><br><span class="line">├── source             &#x2F;&#x2F; content of your site, like posts, img...</span><br><span class="line">|   └── _posts           &#x2F;&#x2F; theme folder</span><br><span class="line">├── themes             &#x2F;&#x2F; theme folder</span><br><span class="line">|   └── landscape        &#x2F;&#x2F; this is the default theme</span><br><span class="line">├── .gitignore         &#x2F;&#x2F; unchecked git files</span><br><span class="line">├── _config.yml        &#x2F;&#x2F; Site configuration file</span><br><span class="line">├── db.json            </span><br><span class="line">├── package.json       &#x2F;&#x2F; manifest of the project</span><br><span class="line">└── package-lock.json</span><br></pre></td></tr></table></figure>
 
-<p>other content…</p>
+<h2 id="Start-Server"><a href="#Start-Server" class="headerlink" title="Start Server"></a>Start Server</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+
+<p>Now, you can open <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> in your browser to check your own blog. It should like this:</p>
+<p><img src="https://live.staticflickr.com/65535/49857419726_c9236debe7_w_d.jpg" alt="image"></p>
+<div class="note info"><p>Use Ctrl + C to quit server.</p></div>
+
+
+
 
       
     </div>
@@ -401,6 +442,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/tags/Github/" rel="tag"># Github</a>
+          
+            <a href="/tags/Blog/" rel="tag"># Blog</a>
+          
+        </div>
+      
 
       
       
@@ -410,14 +461,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/05/03/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/05/03/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
+              <a href="/2020/05/06/test%20copy/" rel="prev" title="test copy">
+                test copy <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -470,8 +525,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -531,6 +595,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-Hexo"><span class="nav-number">1.</span> <span class="nav-text">Install Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Initialize-Hexo"><span class="nav-number">2.</span> <span class="nav-text">Initialize Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Start-Server"><span class="nav-number">3.</span> <span class="nav-text">Start Server</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
