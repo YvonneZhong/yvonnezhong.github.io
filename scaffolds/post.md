@@ -6,9 +6,3 @@ categories:
 description:
 ---
 
-review....
-
-<!-- more -->
-
-other content...
-
