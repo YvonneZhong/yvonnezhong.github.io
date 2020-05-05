@@ -1,14 +1,16 @@
 ---
 title: Build a Free Blog with Hexo on Github - Setup
-date: 2020-05-06 10:33:08
 tags:
-- Hexo
-- Github
-- Blog
+  - Hexo
+  - Github
+  - Blog
 categories:
-- Hexo
+  - Hexo
+date: 2020-05-06 10:33:08
 description:
 ---
+
+
 
 Hexo is a fast, simple and powerful blog framework which is powered by Node.js. As Hexo support Markdown, it has been widely used to deploy a blog or other websites on Github Pages.
 
