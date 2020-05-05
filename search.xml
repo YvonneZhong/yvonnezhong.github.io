@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>test</title>
-    <url>/2020/05/04/test/</url>
-    <content><![CDATA[]]></content>
+    <title>where</title>
+    <url>/2020/05/06/where/</url>
+    <content><![CDATA[<p>review….</p>
+<a id="more"></a>
+
+<p>other content…</p>
+]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -27,6 +31,11 @@
   <entry>
     <title>test copy</title>
     <url>/2020/05/06/test%20copy/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2020/05/04/test/</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
