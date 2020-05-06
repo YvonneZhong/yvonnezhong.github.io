@@ -36,13 +36,13 @@ The structure of the project folder will then look like this:
 .
 ├── node_modules       // libraries downloaded from npm
 ├── scaffolds          // scaffold folder
-|   ├── draft.md         // draft scaffold
-|   ├── page.md          // page scaffold
-|   └── post.md          // post scaffold
+|   ├── draft.md       // draft scaffold
+|   ├── page.md        // page scaffold
+|   └── post.md        // post scaffold
 ├── source             // content of your site, like posts, img...
-|   └── _posts           // theme folder
+|   └── _posts         // theme folder
 ├── themes             // theme folder
-|   └── landscape        // this is the default theme
+|   └── landscape      // this is the default theme
 ├── .gitignore         // unchecked git files
 ├── _config.yml        // Site configuration file
 ├── db.json            
