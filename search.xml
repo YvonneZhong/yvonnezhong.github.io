@@ -11,7 +11,7 @@
 <h2 id="Initialize-Hexo"><a href="#Initialize-Hexo" class="headerlink" title="Initialize Hexo"></a>Initialize Hexo</h2><p>Create a folder for the blog and initialize Hexo in that directory.</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ mkdir blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
 <p>The structure of the project folder will then look like this:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules       &#x2F;&#x2F; libraries downloaded from npm</span><br><span class="line">├── scaffolds          &#x2F;&#x2F; scaffold folder</span><br><span class="line">|   ├── draft.md         &#x2F;&#x2F; draft scaffold</span><br><span class="line">|   ├── page.md          &#x2F;&#x2F; page scaffold</span><br><span class="line">|   └── post.md          &#x2F;&#x2F; post scaffold</span><br><span class="line">├── source             &#x2F;&#x2F; content of your site, like posts, img...</span><br><span class="line">|   └── _posts           &#x2F;&#x2F; theme folder</span><br><span class="line">├── themes             &#x2F;&#x2F; theme folder</span><br><span class="line">|   └── landscape        &#x2F;&#x2F; this is the default theme</span><br><span class="line">├── .gitignore         &#x2F;&#x2F; unchecked git files</span><br><span class="line">├── _config.yml        &#x2F;&#x2F; Site configuration file</span><br><span class="line">├── db.json            </span><br><span class="line">├── package.json       &#x2F;&#x2F; manifest of the project</span><br><span class="line">└── package-lock.json</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules       &#x2F;&#x2F; libraries downloaded from npm</span><br><span class="line">├── scaffolds          &#x2F;&#x2F; scaffold folder</span><br><span class="line">|   ├── draft.md       &#x2F;&#x2F; draft scaffold</span><br><span class="line">|   ├── page.md        &#x2F;&#x2F; page scaffold</span><br><span class="line">|   └── post.md        &#x2F;&#x2F; post scaffold</span><br><span class="line">├── source             &#x2F;&#x2F; content of your site, like posts, img...</span><br><span class="line">|   └── _posts         &#x2F;&#x2F; theme folder</span><br><span class="line">├── themes             &#x2F;&#x2F; theme folder</span><br><span class="line">|   └── landscape      &#x2F;&#x2F; this is the default theme</span><br><span class="line">├── .gitignore         &#x2F;&#x2F; unchecked git files</span><br><span class="line">├── _config.yml        &#x2F;&#x2F; Site configuration file</span><br><span class="line">├── db.json            </span><br><span class="line">├── package.json       &#x2F;&#x2F; manifest of the project</span><br><span class="line">└── package-lock.json</span><br></pre></td></tr></table></figure>
 
 <h2 id="Start-Server"><a href="#Start-Server" class="headerlink" title="Start Server"></a>Start Server</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
 
@@ -32,18 +32,63 @@
       </tags>
   </entry>
   <entry>
-    <title>test copy</title>
-    <url>/2020/05/06/test%20copy/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>where</title>
-    <url>/2020/04/06/where/</url>
-    <content><![CDATA[<p>review….</p>
+    <title>Build a Free Blog with Hexo on Github - Theme Customization</title>
+    <url>/2020/05/06/Build-a-Free-Blog-with-Hexo-on-Github-Theme-Customization/</url>
+    <content><![CDATA[<h2 id="Change-Theme"><a href="#Change-Theme" class="headerlink" title="Change Theme"></a>Change Theme</h2><h3 id="Hexo-Theme"><a href="#Hexo-Theme" class="headerlink" title="Hexo Theme"></a>Hexo Theme</h3><p>In the project folder, there is a directory called <code>themes</code> where you can store your theme folder in it. Modify the <code>theme</code> value in your site’s <code>_config.yml</code>. A typical struction of a theme should like this:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── source           &#x2F;&#x2F; your assets (e.g. CSS and JS files)</span><br><span class="line">├── languages</span><br><span class="line">├── layout           &#x2F;&#x2F; theme&#39;s template files</span><br><span class="line">├── scripts</span><br><span class="line">└── _config.yml      &#x2F;&#x2F; Theme configuration file</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
+<h3 id="Change-to-Next-Theme"><a href="#Change-to-Next-Theme" class="headerlink" title="Change to Next Theme"></a>Change to Next Theme</h3><p>Go to your site folder and clone the <code>Next Theme</code>:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<p>or you can manually download the <code>NexT Theme</code> files and locate it in <code>/theme</code> folder of your project.</p>
+<p>Then modify the <code>theme</code> value in your site’s <code>_config.yml</code></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
+<div class="note danger"><p>Remember to restart the server after modify your site’s config file.</p></div>
 
-<p>other content…</p>
+<p>Refresh the page, your site with new theme should show up.</p>
+<p><img src="https://live.staticflickr.com/65535/49861076306_7fab9993ed_w_d.jpg" alt="image"></p>
+<h2 id="Basic-Settings"><a href="#Basic-Settings" class="headerlink" title="Basic Settings"></a>Basic Settings</h2><h3 id="Complete-Site’s-Basic-Info"><a href="#Complete-Site’s-Basic-Info" class="headerlink" title="Complete Site’s Basic Info"></a>Complete Site’s Basic Info</h3><p>Edit some basic infomation of your site. </p>
+<figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Your</span> <span class="string">Site</span> <span class="string">Title</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">Your</span> <span class="string">site's</span> <span class="string">subtitle</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">something</span> <span class="string">about</span> <span class="string">you</span> <span class="string">or</span> <span class="string">your</span> <span class="string">site</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">keyword1,</span> <span class="string">keyword2</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">your</span> <span class="string">name</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">en</span>  <span class="comment"># set values according to next/languages</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">''</span>  <span class="comment"># the same as your computer by default</span></span><br></pre></td></tr></table></figure>
+<p>These information will show on your site’s sidebar.</p>
+<p><img src="https://live.staticflickr.com/65535/49861237301_74e8fdcb8f_w_d.jpg" alt="image"></p>
+<h3 id="Theme-Scheme"><a href="#Theme-Scheme" class="headerlink" title="Theme Scheme"></a>Theme Scheme</h3><p>Users can change the settings of themes to custom the appearance of their blog by editing ‘_config.yml` file under the theme folder.</p>
+<p>Four scheme options are offered in <code>NexT</code> theme, comment out the one you liked.</p>
+  <figure class="highlight yml"><figcaption><span>./themes/next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Menu"><a href="#Menu" class="headerlink" title="Menu"></a>Menu</h3><p>Menu is the navigation of the blog that shows in the sidebar just below your site’s titles. Edit the <code>menu settings</code> in theme configuration file to customize it.</p>
+<figure class="highlight yml"><figcaption><span>./themes/next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-user</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure>
+
+<p>To define a menu item, four parts are included: <code>key (the name of the menu item)</code>, <code>the target link</code>, <code>||</code> and the icon name (Font Awesome icon).</p>
+<p>After settings, the menu shows like this:</p>
+<p><img src="https://live.staticflickr.com/65535/49862487197_ddab944464_w_d.jpg" alt="image"></p>
+<p>However, when click the item of the menu, like <code>Tags</code>, the page shows <code>Cannot GET /tags/</code> error. That’s because the <code>tags</code> page is not exist.</p>
+<h3 id="Create-New-Pages"><a href="#Create-New-Pages" class="headerlink" title="Create New Pages"></a>Create New Pages</h3><p>In your site’s folder, input the command:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>A new folder called <code>tags</code> will be created in <code>./source</code> with an <code>index.md</code> in it.</p>
+<p>The same way can be applied to build <code>categories</code>, <code>archives</code> and <code>about</code> pages.</p>
+<h3 id="Sidebar-Settings"><a href="#Sidebar-Settings" class="headerlink" title="Sidebar Settings"></a>Sidebar Settings</h3><p>Find <code>sidebar</code> in <code>./themes/next/_config.yml</code>, then you can set sidebar’s position, width and other information. </p>
+<h3 id="Favicon-of-Your-Site"><a href="#Favicon-of-Your-Site" class="headerlink" title="Favicon of Your Site"></a>Favicon of Your Site</h3><p>Select the image that you’d like to use as the favicon and put it in <code>./themes/nex/source/images</code>. Now change the favico setting in theme config file:</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span><br><span class="line">  <span class="comment"># small: /images/favicon-16x16-next.png</span></span><br><span class="line">  <span class="attr">medium:</span> <span class="string">/images/owl-favicon.ico</span></span><br><span class="line">  <span class="comment"># apple_touch_icon: /images/apple-touch-icon-next.png</span></span><br><span class="line">  <span class="comment"># safari_pinned_tab: /images/logo.svg</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Footer-of-Site"><a href="#Footer-of-Site" class="headerlink" title="Footer of Site"></a>Footer of Site</h3><figure class="highlight yml"><figcaption><span>./themes/nex/source/images</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="attr">since:</span> <span class="number">2020</span>  <span class="comment"># when the site was setup</span></span><br><span class="line">  <span class="attr">icon:</span>  <span class="comment"># between year and copyright info</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">fa</span> <span class="string">fa-heart</span>  <span class="comment"># name in Font Awesome</span></span><br><span class="line">    <span class="attr">animated:</span> <span class="literal">false</span>  <span class="comment"># icon display</span></span><br><span class="line">    <span class="attr">color:</span> <span class="string">"#ff0000"</span>  <span class="comment"># color of the icon</span></span><br><span class="line">  <span class="attr">copyright:</span> <span class="string">Yvonne</span> <span class="string">Zhong</span>  <span class="comment"># owner of the copyright</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">powered:</span> <span class="literal">true</span>  <span class="comment"># whether show powered by info</span></span><br></pre></td></tr></table></figure>
+<p>The footer displays like this:</p>
+<p><img src="https://live.staticflickr.com/65535/49864523626_e83570d79f_w_d.jpg" alt="image"></p>
+<h3 id="Add-Social-info-to-Navbar"><a href="#Add-Social-info-to-Navbar" class="headerlink" title="Add Social info to Navbar"></a>Add Social info to Navbar</h3><p>You can select which social information you want to show on your site. Comment out the line and change the links to your own social links.</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">GitHub:</span> <span class="string">https://github.com/yourname</span> <span class="string">||</span> <span class="string">fab</span> <span class="string">fa-github</span></span><br><span class="line"><span class="comment">#E-Mail: mailto:yourname@gmail.com || fa fa-envelope</span></span><br><span class="line"><span class="comment">#Twitter: https://twitter.com/yourname || fab fa-twitter</span></span><br><span class="line"><span class="attr">FB Page:</span> <span class="string">https://www.facebook.com/yourname</span> <span class="string">||</span> <span class="string">fab</span> <span class="string">fa-facebook</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Show-Excerpt-of-the-Post-on-the-Homepage"><a href="#Show-Excerpt-of-the-Post-on-the-Homepage" class="headerlink" title="Show Excerpt of the Post on the Homepage"></a>Show Excerpt of the Post on the Homepage</h3><p>Instead of display the whole content of posts, you can add <code>&lt;!--more--&gt;</code> in the post, then only the part before <code>&lt;!--more--&gt;</code> will show on the homepage with a <code>Read more</code> button.</p>
+<p><img src="https://live.staticflickr.com/65535/49864096103_25d2735303_w_d.jpg" alt="image"></p>
+<div class="note info"><p>If the post has a description, then the description will be used as the excerpt of the post shown on the homepage.</p></div>
+
+<p>Now, after these basic infomation have been set up, you can continue to write posts locally or deploy your blog on to the GitHub Pages.</p>
 ]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github</tag>
+        <tag>Blog</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -62,6 +107,20 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 <a id="more"></a>
+]]></content>
+  </entry>
+  <entry>
+    <title>test copy</title>
+    <url>/2020/05/06/test%20copy/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>where</title>
+    <url>/2020/04/06/where/</url>
+    <content><![CDATA[<p>review….</p>
+<a id="more"></a>
+
+<p>other content…</p>
 ]]></content>
   </entry>
 </search>
