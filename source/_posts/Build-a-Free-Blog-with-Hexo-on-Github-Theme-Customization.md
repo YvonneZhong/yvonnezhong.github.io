@@ -1,14 +1,16 @@
 ---
 title: Build a Free Blog with Hexo on Github - Theme Customization
-date: 2020-05-06 11:03:55
 tags:
   - Hexo
   - Github
   - Blog
 categories:
   - Hexo
+date: 2020-05-06 11:03:55
 description:
 ---
+
+
 ## Change Theme
 ### Hexo Theme
 In the project folder, there is a directory called `themes` where you can store your theme folder in it. Modify the `theme` value in your site's `_config.yml`. A typical struction of a theme should like this:
