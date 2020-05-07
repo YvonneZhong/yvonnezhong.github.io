@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>no such file or directory, open &amp;#39;themes&amp;#92;next&amp;#92;layout&amp;#92;&amp;#95;scripts&amp;#92;schemes&amp;#92;.swig&amp;#39;</title>
+    <url>/2020/05/07/no-such-file-or-directory-open-39-themes-92-next-92-layout-92-95-scripts-92-schemes-92-swig-39/</url>
+    <content><![CDATA[<h2 id="Trouble"><a href="#Trouble" class="headerlink" title="Trouble"></a>Trouble</h2><p>After adding social links in theme configuration file, Hexo throwed an error when execute <code>$ hexo deploy -g</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Unhandled rejection Error: ENOENT, no such file or directory &#39;&#x2F;home&#x2F;msy&#x2F;MyBlog&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_scripts&#x2F;schemes&#x2F;.swig&#39;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>Comment out the <code>key</code> line as well when adding a new type setting.</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">Twitter:</span> <span class="string">https://twitter.com/yourname</span> <span class="string">||</span> <span class="string">twitter</span></span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Trouble Shooting</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>How to solve the problem of using special characters in the title of a post</title>
     <url>/2020/05/07/How-to-solve-the-problem-of-using-special-characters-in-the-title-of-a-post/</url>
     <content><![CDATA[<p>In most of the time, it works fine when using a special character like <code>/</code>, <code>&#39;</code>, <code>[]</code> and <code></code> in the title of an article just by enclosing them in a pair of double quotes.</p>
@@ -33,7 +52,9 @@
 <p>In this series, I will give some instructions about how to build a personal blog with Hexo and Github according to my hands-on practice.</p>
 <a id="more"></a>
 <h2 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<div class="note info"><p>Make sure you have installed Node.js and Git before this step. </p></div>
+<div class="note info">
+            <p>Make sure you have installed Node.js and Git before this step. </p>
+          </div>
 <h2 id="Initialize-Hexo"><a href="#Initialize-Hexo" class="headerlink" title="Initialize Hexo"></a>Initialize Hexo</h2><p>Create a folder for the blog and initialize Hexo in that directory.</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ mkdir blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
 <p>The structure of the project folder will then look like this:</p>
@@ -43,7 +64,9 @@
 
 <p>Now, you can open <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> in your browser to check your own blog. It should like this:</p>
 <p><img src="https://live.staticflickr.com/65535/49857419726_c9236debe7_w_d.jpg" alt="image"></p>
-<div class="note info"><p>Use Ctrl + C to quit server.</p></div>
+<div class="note info">
+            <p>Use Ctrl + C to quit server.</p>
+          </div>
 
 
 
@@ -68,7 +91,9 @@
 <p>or you can manually download the <code>NexT Theme</code> files and locate it in <code>/theme</code> folder of your project.</p>
 <p>Then modify the <code>theme</code> value in your site’s <code>_config.yml</code></p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
-<div class="note danger"><p>Remember to restart the server after modify your site’s config file.</p></div>
+<div class="note danger">
+            <p>Remember to restart the server after modify your site’s config file.</p>
+          </div>
 
 <p>Refresh the page, your site with new theme should show up.</p>
 <p><img src="https://live.staticflickr.com/65535/49861076306_7fab9993ed_w_d.jpg" alt="image"></p>
@@ -103,7 +128,9 @@
 
 <h3 id="Show-Excerpt-of-the-Post-on-the-Homepage"><a href="#Show-Excerpt-of-the-Post-on-the-Homepage" class="headerlink" title="Show Excerpt of the Post on the Homepage"></a>Show Excerpt of the Post on the Homepage</h3><p>Instead of display the whole content of posts, you can add <code>&lt;!--more--&gt;</code> in the post, then only the part before <code>&lt;!--more--&gt;</code> will show on the homepage with a <code>Read more</code> button.</p>
 <p><img src="https://live.staticflickr.com/65535/49864096103_25d2735303_w_d.jpg" alt="image"></p>
-<div class="note info"><p>If the post has a description, then the description will be used as the excerpt of the post shown on the homepage.</p></div>
+<div class="note info">
+            <p>If the post has a description, then the description will be used as the excerpt of the post shown on the homepage.</p>
+          </div>
 
 <p>Now, after these basic infomation have been set up, you can continue to write posts locally or deploy your blog on to the GitHub Pages.</p>
 ]]></content>
@@ -114,25 +141,6 @@
         <tag>Hexo</tag>
         <tag>Github</tag>
         <tag>Blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>no such file or directory, open &amp;#39;themes&amp;#92;next&amp;#92;layout&amp;#92;&amp;#95;scripts&amp;#92;schemes&amp;#92;.swig&amp;#39;</title>
-    <url>/2020/05/07/no-such-file-or-directory-open-39-themes-92-next-92-layout-92-95-scripts-92-schemes-92-swig-39/</url>
-    <content><![CDATA[<h2 id="Trouble"><a href="#Trouble" class="headerlink" title="Trouble"></a>Trouble</h2><p>After adding social links in theme configuration file, Hexo throwed an error when execute <code>$ hexo deploy -g</code>:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Unhandled rejection Error: ENOENT, no such file or directory &#39;&#x2F;home&#x2F;msy&#x2F;MyBlog&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_scripts&#x2F;schemes&#x2F;.swig&#39;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>Comment out the <code>key</code> line as well when adding a new type setting.</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">Twitter:</span> <span class="string">https://twitter.com/yourname</span> <span class="string">||</span> <span class="string">twitter</span></span><br></pre></td></tr></table></figure>
-
-
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Trouble Shooting</tag>
       </tags>
   </entry>
 </search>
