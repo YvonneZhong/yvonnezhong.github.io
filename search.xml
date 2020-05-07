@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>no such file or directory, open &amp;#39;themes&amp;#92;next&amp;#92;layout&amp;#92;&amp;#95;scripts&amp;#92;schemes&amp;#92;.swig&amp;#39;</title>
+    <url>/2020/05/07/no-such-file-or-directory-open-39-themes-92-next-92-layout-92-95-scripts-92-schemes-92-swig-39/</url>
+    <content><![CDATA[<h2 id="Trouble"><a href="#Trouble" class="headerlink" title="Trouble"></a>Trouble</h2><p>After adding social links in theme configuration file, Hexo throwed an error when execute <code>$ hexo deploy -g</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Unhandled rejection Error: ENOENT, no such file or directory &#39;&#x2F;home&#x2F;msy&#x2F;MyBlog&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_scripts&#x2F;schemes&#x2F;.swig&#39;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>Comment out the <code>key</code> line as well when adding a new type setting.</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">Twitter:</span> <span class="string">https://twitter.com/yourname</span> <span class="string">||</span> <span class="string">twitter</span></span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Trouble Shooting</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Build a Free Blog with Hexo on Github - Setup</title>
     <url>/2020/05/06/Build-a-Free-Blog-with-Hexo-on-Github-Setup/</url>
     <content><![CDATA[<p>Hexo is a fast, simple and powerful blog framework which is powered by Node.js. As Hexo support Markdown, it has been widely used to deploy a blog or other websites on Github Pages.</p>
@@ -30,6 +49,15 @@
         <tag>Github</tag>
         <tag>Blog</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>where</title>
+    <url>/2020/04/06/where/</url>
+    <content><![CDATA[<p>review….</p>
+<a id="more"></a>
+
+<p>other content…</p>
+]]></content>
   </entry>
   <entry>
     <title>Build a Free Blog with Hexo on Github - Theme Customization</title>
@@ -89,38 +117,5 @@
         <tag>Github</tag>
         <tag>Blog</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/05/03/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<a id="more"></a>
-]]></content>
-  </entry>
-  <entry>
-    <title>test copy</title>
-    <url>/2020/05/06/test%20copy/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>where</title>
-    <url>/2020/04/06/where/</url>
-    <content><![CDATA[<p>review….</p>
-<a id="more"></a>
-
-<p>other content…</p>
-]]></content>
   </entry>
 </search>

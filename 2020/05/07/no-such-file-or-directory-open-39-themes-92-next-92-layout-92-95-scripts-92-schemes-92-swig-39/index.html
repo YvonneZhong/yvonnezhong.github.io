@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="en">
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -62,7 +62,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Trouble Shooting,Hexo," />
 
 
 
@@ -73,20 +73,18 @@
 
 
 
-<meta name="description" content="I&#39;m a developer in NZ. In this blog, I will record and share some IT-related things in English to mark every progress in computing field as well as improve my English.">
+<meta name="description" content="TroubleAfter adding social links in theme configuration file, Hexo throwed an error when execute $ hexo deploy -g: 1Unhandled rejection Error: ENOENT, no such file or directory &#39;&#x2F;home&#x2F;ms">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test copy">
-<meta property="og:url" content="http://yoursite.com/2020/05/06/test%20copy/index.html">
+<meta property="og:title" content="no such file or directory, open &#39;themes&amp;#92;next&amp;#92;layout&amp;#92;&amp;#95;scripts&amp;#92;schemes&amp;#92;.swig&#39;">
+<meta property="og:url" content="http://yoursite.com/2020/05/07/no-such-file-or-directory-open-39-themes-92-next-92-layout-92-95-scripts-92-schemes-92-swig-39/index.html">
 <meta property="og:site_name" content="Yvonne Zhong">
-<meta property="og:description" content="I&#39;m a developer in NZ. In this blog, I will record and share some IT-related things in English to mark every progress in computing field as well as improve my English.">
+<meta property="og:description" content="TroubleAfter adding social links in theme configuration file, Hexo throwed an error when execute $ hexo deploy -g: 1Unhandled rejection Error: ENOENT, no such file or directory &#39;&#x2F;home&#x2F;ms">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-05-06T01:03:01.000Z">
-<meta property="article:modified_time" content="2020-05-05T22:55:50.169Z">
+<meta property="article:published_time" content="2020-05-07T00:07:10.000Z">
+<meta property="article:modified_time" content="2020-05-07T00:08:21.623Z">
 <meta property="article:author" content="Yvonne Zhong">
-<meta property="article:tag" content="IT">
-<meta property="article:tag" content=" computing">
-<meta property="article:tag" content=" developer">
-<meta property="article:tag" content=" programmer">
+<meta property="article:tag" content="Trouble Shooting">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
 
 
@@ -95,7 +93,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -117,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/05/06/test copy/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/05/07/no-such-file-or-directory-open-39-themes-92-next-92-layout-92-95-scripts-92-schemes-92-swig-39/"/>
 
 
 
 
 
-  <title>test copy | Yvonne Zhong</title>
+  <title>no such file or directory, open &#39;themes&#92;next&#92;layout&#92;&#95;scripts&#92;schemes&#92;.swig&#39; | Yvonne Zhong</title>
   
 
 
@@ -294,7 +292,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/06/test%20copy/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/07/no-such-file-or-directory-open-39-themes-92-next-92-layout-92-95-scripts-92-schemes-92-swig-39/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yvonne Zhong">
@@ -311,7 +309,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">test copy</h1>
+          <h1 class="post-title" itemprop="name headline">no such file or directory, open &#39;themes&#92;next&#92;layout&#92;&#95;scripts&#92;schemes&#92;.swig&#39;</h1>
         
 
         <div class="post-meta">
@@ -323,8 +321,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-06T13:03:01+12:00">
-                2020-05-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-07T12:07:10+12:00">
+                2020-05-07
               </time>
             
 
@@ -333,6 +331,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -361,7 +381,14 @@
       
 
       
-        
+        <h2 id="Trouble"><a href="#Trouble" class="headerlink" title="Trouble"></a>Trouble</h2><p>After adding social links in theme configuration file, Hexo throwed an error when execute <code>$ hexo deploy -g</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Unhandled rejection Error: ENOENT, no such file or directory &#39;&#x2F;home&#x2F;msy&#x2F;MyBlog&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_scripts&#x2F;schemes&#x2F;.swig&#39;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>Comment out the <code>key</code> line as well when adding a new type setting.</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">Twitter:</span> <span class="string">https://twitter.com/yourname</span> <span class="string">||</span> <span class="string">twitter</span></span><br></pre></td></tr></table></figure>
+
+
+
       
     </div>
     
@@ -400,6 +427,14 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Trouble-Shooting/" rel="tag"># Trouble Shooting</a>
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+        </div>
       
 
       
@@ -470,8 +505,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -486,7 +530,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -508,7 +552,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -547,6 +591,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Trouble"><span class="nav-number">1.</span> <span class="nav-text">Trouble</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
