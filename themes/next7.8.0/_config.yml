@@ -27,7 +27,7 @@ custom_file_path:
   #sidebar: source/_data/sidebar.swig
   #postMeta: source/_data/post-meta.swig
   #postBodyEnd: source/_data/post-body-end.swig
-  #footer: source/_data/footer.swig
+  footer: source/_data/footer.swig
   #bodyEnd: source/_data/body-end.swig
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
@@ -80,6 +80,8 @@ footer:
     gongan_num:
     # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
     gongan_icon_url:
+
+
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/share-your-work/licensing-types-examples
@@ -255,6 +257,15 @@ symbols_count_time:
   separated_meta: true
   item_text_post: true
   item_text_total: false
+  # awl: 5  # Average Word Length CN-2, EN-5
+  # wpm: 200  # 200~250
+  # symbols: true
+  # time: true
+  # total_symbols: true
+  # total_time: true
+  # exclude_codeblock: false
+  # suffix: "mins."
+
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: true
@@ -713,7 +724,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: fa fa-user
   total_views: true
@@ -981,7 +992,7 @@ vendors:
 
   # Internal version: 1.0.0
   # three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
-  # three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js
+  # three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@latest/three-waves.min.js
   # canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
   # canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
   three:

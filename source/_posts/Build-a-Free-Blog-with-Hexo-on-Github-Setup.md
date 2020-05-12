@@ -12,7 +12,14 @@ description:
 
 
 
-Hexo is a fast, simple and powerful blog framework which is powered by Node.js. As Hexo support Markdown, it has been widely used to deploy a blog or other websites on Github Pages.
+Hexo is a fast, simple and powerful static blog generating framework which is powered by Node.js. As Hexo support Markdown, it has been widely used to deploy a blog or other websites on Github Pages.
+
+Before Hexo, I have tried several ways to build my technology blog on different platforms or servers, like blogger, wordpress.com or AWS ES2 with my own coded CMS.
+However, none of them met my needs:
+- Markdown is not only supported when writing, but also can display accordingly
+- Simple theme that can be customized
+- Easy to backup
+- Safe enough
 
 In this series, I will give some instructions about how to build a personal blog with Hexo and Github according to my hands-on practice.
 
