@@ -1,9 +1,11 @@
 ---
 title: Build a Free Blog with Hexo on Github - Writing with Markdown
 tags:
-  - null
+  - Hexo
+  - Github
+  - Blog
 categories:
-  - null
+  - Hexo
 description:
 ---
 

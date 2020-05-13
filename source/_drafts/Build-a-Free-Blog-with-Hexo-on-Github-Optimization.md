@@ -1,5 +1,6 @@
 ---
 title: Build a Free Blog with Hexo on Github - Optimization
+tags:
   - Hexo
   - Github
   - Blog
