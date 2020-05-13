@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>How to solve the problem of using special characters in the title of a post</title>
+    <url>/2020/05/07/How-to-solve-the-problem-of-using-special-characters-in-the-title-of-a-post/</url>
+    <content><![CDATA[<p>In most of the time, it works fine when using a special character like <code>/</code>, <code>&#39;</code>, <code>[]</code> and <code></code> in the title of an article just by enclosing them in a pair of double quotes.</p>
+<p>However, when it comes across a <code>Backslash</code> (\), things can be a little tricky.</p>
+<a id="more"></a>
+<p>Let’s say you tend to create an article with command:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"open 'themes\next' files"</span></span><br></pre></td></tr></table></figure>
+<p>It seems that Hexo does create a draft or post for you successfully. However when we open the post, we see the title displayed in an odd way:</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: |-</span><br><span class="line">  open 'themes</span><br><span class="line">  ext' files</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">  - </span>null</span><br><span class="line">categories:</span><br><span class="line"><span class="bullet">  - </span>null</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>So, we try to use <code>&amp;#92;</code> instead, which is the HTML character code of backslash:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"open 'themes&amp;#92;next' files"</span></span><br></pre></td></tr></table></figure>
+<p>A new post called <code>open-themes-92-next-files.md</code> was established with the following content:</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 'open ''themes&amp;#92;next'' files'</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">  - </span>null</span><br><span class="line">categories:</span><br><span class="line"><span class="bullet">  - </span>null</span><br><span class="line">description:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>And how does the post display on the blog? </p>
+<p><img src="https://live.staticflickr.com/65535/49865436637_d821fa56e1_w_d.jpg" alt="image"></p>
+<p>Bingo!</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>HTML Character Codes</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Build a Free Blog with Hexo on Github - Setup</title>
     <url>/2020/05/06/Build-a-Free-Blog-with-Hexo-on-Github-Setup/</url>
     <content><![CDATA[<p>Hexo is a fast, simple and powerful static blog generating framework which is powered by Node.js. As Hexo support Markdown, it has been widely used to deploy a blog or other websites on Github Pages.</p>
@@ -103,32 +129,6 @@
         <tag>Hexo</tag>
         <tag>Github</tag>
         <tag>Blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>How to solve the problem of using special characters in the title of a post</title>
-    <url>/2020/05/07/How-to-solve-the-problem-of-using-special-characters-in-the-title-of-a-post/</url>
-    <content><![CDATA[<p>In most of the time, it works fine when using a special character like <code>/</code>, <code>&#39;</code>, <code>[]</code> and <code></code> in the title of an article just by enclosing them in a pair of double quotes.</p>
-<p>However, when it comes across a <code>Backslash</code> (\), things can be a little tricky.</p>
-<a id="more"></a>
-<p>Let’s say you tend to create an article with command:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"open 'themes\next' files"</span></span><br></pre></td></tr></table></figure>
-<p>It seems that Hexo does create a draft or post for you successfully. However when we open the post, we see the title displayed in an odd way:</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: |-</span><br><span class="line">  open 'themes</span><br><span class="line">  ext' files</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">  - </span>null</span><br><span class="line">categories:</span><br><span class="line"><span class="bullet">  - </span>null</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>So, we try to use <code>&amp;#92;</code> instead, which is the HTML character code of backslash:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"open 'themes&amp;#92;next' files"</span></span><br></pre></td></tr></table></figure>
-<p>A new post called <code>open-themes-92-next-files.md</code> was established with the following content:</p>
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 'open ''themes&amp;#92;next'' files'</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">  - </span>null</span><br><span class="line">categories:</span><br><span class="line"><span class="bullet">  - </span>null</span><br><span class="line">description:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>And how does the post display on the blog? </p>
-<p><img src="https://live.staticflickr.com/65535/49865436637_d821fa56e1_w_d.jpg" alt="image"></p>
-<p>Bingo!</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>HTML Character Codes</tag>
       </tags>
   </entry>
   <entry>
