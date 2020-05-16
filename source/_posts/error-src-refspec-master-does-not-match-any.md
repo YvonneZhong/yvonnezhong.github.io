@@ -1,18 +1,27 @@
 ---
-title: 'error: src refspec master does not match any'
+title: "error: src refspec master does not match any"
 tags:
-  - null
+  - Git
+  - Trouble Shooting
 categories:
-  - null
-date: 2020-05-14 12:50:46
+  - Git
+date: 2020-05-15 12:42:41
 description:
 ---
 
+## Trouble
 
+When I execute `git push` command to push a new established folder to GitHub, it gave the error:
 
-review....
+```bash
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Username/Newfolder.git'
+```
 
-<!-- more -->
+## Solution
 
-other content...
+After adding a file to that folder, everything worked fine.
 
+## Reason
+
+Git won't track `empty` repositories. So before push it to the remote, make sure that it is not empty.

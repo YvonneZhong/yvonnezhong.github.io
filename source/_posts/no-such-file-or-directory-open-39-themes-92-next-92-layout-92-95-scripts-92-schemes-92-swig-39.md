@@ -11,8 +11,6 @@ date: 2020-05-07 12:07:10
 description:
 ---
 
-
-
 ## Trouble
 After adding social links in theme configuration file, Hexo throwed an error when execute `$ hexo deploy -g`:
 ```
